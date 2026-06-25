@@ -1,6 +1,6 @@
 {
-  "name": "YOSU International School Portal",
-  "description": "An interactive digital portal for YOSU International School, featuring modern notices, school events, admin management tools, academic results tracking, and custom inquiry forms, integrated with secure Firebase services.",
+  "name": "Yosu International School",
+  "description": "Welcome to Yosu International School website.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
