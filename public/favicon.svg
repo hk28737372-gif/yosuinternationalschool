@@ -1,56 +1,68 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
-  <!-- White circular background for the favicon to look crisp on dark & light browser tabs -->
-  <circle cx="300" cy="300" r="290" fill="#FFFFFF" />
+  <!-- Pure white circular background for beautiful rendering on all browser tabs -->
+  <circle cx="300" cy="300" r="295" fill="#FFFFFF" />
   
-  <g transform="translate(0, 50)">
-    <!-- Top Arch Lines -->
-    <path d="M 120,185 A 170,170 0 0,1 480,185" fill="none" stroke="#0A2540" stroke-width="3.5" stroke-linecap="round" />
-    <path d="M 145,210 A 140,140 0 0,1 455,210" fill="none" stroke="#0A2540" stroke-width="2.5" stroke-linecap="round" />
-    
-    <!-- Y O S U Text precisely balanced along the curve -->
-    <g font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-weight="900" font-size="44" fill="#0A2540">
-      <text x="175" y="155" transform="rotate(-36, 175, 155)" text-anchor="middle">Y</text>
-      <text x="240" y="112" transform="rotate(-12, 240, 112)" text-anchor="middle">O</text>
-      <text x="360" y="112" transform="rotate(12, 360, 112)" text-anchor="middle">S</text>
-      <text x="425" y="155" transform="rotate(36, 425, 155)" text-anchor="middle">U</text>
-    </g>
-    
-    <!-- Central Shield/Semi-Circle with radiating background -->
-    <g id="central-shield">
-      <path d="M 180,260 A 120,120 0 0,1 420,260 Z" fill="#0A2540" />
-      <g stroke="#1E3A8A" stroke-width="1.5" opacity="0.30">
-        <line x1="300" y1="260" x2="300" y2="140" />
-        <line x1="300" y1="260" x2="210" y2="180" />
-        <line x1="300" y1="260" x2="390" y2="180" />
-        <line x1="300" y1="260" x2="250" y2="150" />
-        <line x1="300" y1="260" x2="350" y2="150" />
-      </g>
-      <path d="M 195,240 Q 300,170 405,240" fill="none" stroke="#102A43" stroke-width="8" opacity="0.4" />
-      <path d="M 210,250 Q 300,200 390,250" fill="none" stroke="#102A43" stroke-width="8" opacity="0.4" />
-    </g>
+  <!-- Outer premium thin outline -->
+  <circle cx="300" cy="300" r="285" fill="none" stroke="#0B2545" stroke-width="1.5" stroke-dasharray="8 4" opacity="0.3" />
 
-    <!-- Central Gold Badge/Circle -->
-    <circle cx="300" cy="235" r="55" fill="#C5A059" />
-    <circle cx="300" cy="235" r="48" fill="none" stroke="#0A2540" stroke-width="2.5" />
-    
-    <text x="300" y="222" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-weight="900" font-size="34" fill="#0A2540" text-anchor="middle">Y</text>
-    <circle cx="300" cy="192" r="3.5" fill="#0A2540" />
-    
-    <g id="mini-book" fill="#0A2540">
-      <path d="M 300,248 C 290,243 278,245 270,249 L 270,261 C 278,257 290,255 300,260 Z" />
-      <path d="M 300,248 C 310,243 322,245 330,249 L 330,261 C 322,257 310,255 300,260 Z" />
-      <line x1="300" y1="248" x2="300" y2="260" stroke="#C5A059" stroke-width="1.5" />
-    </g>
+  <!-- ARCHED TYPOGRAPHY SECTION -->
+  <!-- Invisible text path for arched 'YOSU' text (Left to Right) -->
+  <path id="yosu-arch" d="M 115,245 A 215,215 0 0,1 485,245" fill="none" stroke="none" />
+  
+  <!-- Thin dark accent arc above the text -->
+  <path d="M 120,215 A 235,235 0 0,1 480,215" fill="none" stroke="#0B2545" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Arced Text "YOSU" -->
+  <text font-family="'Cinzel', 'Georgia', 'Times New Roman', serif" font-weight="800" font-size="44" fill="#0B2545" letter-spacing="18" text-anchor="middle">
+    <textPath href="#yosu-arch" startOffset="50%">YOSU</textPath>
+  </text>
+  
+  <!-- Thin dark accent arc below the text -->
+  <path d="M 145,246 A 200,200 0 0,1 455,246" fill="none" stroke="#0B2545" stroke-width="2.5" stroke-linecap="round" />
 
-    <!-- Giant Wings / Book Pages below -->
-    <path d="M 300,255 C 230,225 180,240 120,270 C 180,295 240,290 300,295 Z" fill="#C5A059" stroke="#9A7B43" stroke-width="1" />
-    <path d="M 300,255 C 370,225 420,240 480,270 C 420,295 360,290 300,295 Z" fill="#C5A059" stroke="#9A7B43" stroke-width="1" />
+  <!-- CENTRAL EMBLEM: NAVY BLUE CREST/SHIELD -->
+  <!-- Dark navy blue shield shape positioned directly above the book -->
+  <path d="M 300,205 C 324,205 344,213 344,245 C 344,275 312,298 300,307 C 288,298 256,275 256,245 C 256,213 276,205 300,205 Z" fill="#0B2545" />
+  
+  <!-- Inner premium gold border for the crest -->
+  <path d="M 300,211 C 320,211 337,218 337,245 C 337,270 310,291 300,299 C 290,291 263,270 263,245 C 263,218 280,211 300,211 Z" fill="none" stroke="#C5A059" stroke-width="2" />
 
-    <path d="M 300,270 C 200,230 100,255 35,325 C 120,312 210,305 300,298 Z" fill="#0A2540" />
-    <path d="M 300,270 C 400,230 500,255 565,325 C 480,312 390,305 300,298 Z" fill="#0A2540" />
-    <path d="M 300,270 L 300,298" stroke="#C5A059" stroke-width="3" stroke-linecap="round" />
+  <!-- Classic letter 'Y' centered inside the crest -->
+  <text x="300" y="247" font-family="'Cinzel', 'Georgia', 'Times New Roman', serif" font-weight="900" font-size="34" fill="#C5A059" text-anchor="middle">Y</text>
+  
+  <!-- Gold dot separator below 'Y' -->
+  <circle cx="300" cy="261" r="3.5" fill="#C5A059" />
+  
+  <!-- Miniature gold laurel wreath at the bottom of the crest -->
+  <path d="M 275,270 Q 280,285 300,285 Q 320,285 325,270" fill="none" stroke="#C5A059" stroke-width="2" stroke-linecap="round" />
+  <!-- Individual custom gold leaves -->
+  <path d="M 275,270 Q 272,265 277,264 Z M 283,277 Q 280,272 285,271 Z M 292,282 Q 290,276 295,276 Z M 325,270 Q 328,265 323,264 Z M 317,277 Q 320,272 315,271 Z M 308,282 Q 310,276 305,276 Z" fill="#C5A059" />
 
-    <!-- Bottom Label -->
-    <text x="300" y="415" font-family="'Montserrat', 'Inter', 'Arial Black', sans-serif" font-weight="900" font-size="34" fill="#0A2540" text-anchor="middle" letter-spacing="1.5">INTERNATIONAL SCHOOL</text>
-  </g>
+
+  <!-- PROMINENT STYLIZED OPEN BOOK SECTION -->
+  <!-- Layered golden-tan interior pages/section -->
+  <!-- Left gold pages -->
+  <path d="M 300,318 C 240,282 170,292 110,325 C 165,352 235,345 300,348 Z" fill="#C5A059" stroke="#9E7D43" stroke-width="1" />
+  <!-- Right gold pages -->
+  <path d="M 300,318 C 360,282 430,292 490,325 C 435,352 365,345 300,348 Z" fill="#C5A059" stroke="#9E7D43" stroke-width="1" />
+  
+  <!-- Subtle inner white-gold layers to represent actual book page texture -->
+  <path d="M 300,318 C 245,288 180,298 125,328 C 175,352 240,346 300,348" fill="none" stroke="#FAF0E6" stroke-width="2" opacity="0.8" />
+  <path d="M 300,318 C 355,288 420,298 475,328 C 425,352 360,346 300,348" fill="none" stroke="#FAF0E6" stroke-width="2" opacity="0.8" />
+  <path d="M 300,318 C 250,294 190,304 140,331" fill="none" stroke="#FAF0E6" stroke-width="1.2" opacity="0.6" />
+  <path d="M 300,318 C 350,294 410,304 460,331" fill="none" stroke="#FAF0E6" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Prominent dark navy blue outer cover/pages (Wings) -->
+  <!-- Left cover wing -->
+  <path d="M 300,332 C 190,285 90,310 20,385 C 110,370 205,362 300,354 Z" fill="#0B2545" />
+  <!-- Right cover wing -->
+  <path d="M 300,332 C 410,285 510,310 580,385 C 490,370 395,362 300,354 Z" fill="#0B2545" />
+  
+  <!-- Central gold spine divider -->
+  <path d="M 300,332 L 300,354" stroke="#C5A059" stroke-width="3.5" stroke-linecap="round" />
+
+
+  <!-- HORIZONTAL BOTTOM TYPOGRAPHY SECTION -->
+  <!-- "INTERNATIONAL SCHOOL" in horizontal matching navy blue serif font -->
+  <text x="300" y="475" font-family="'Cinzel', 'Georgia', 'Times New Roman', serif" font-weight="bold" font-size="32" fill="#0B2545" text-anchor="middle" letter-spacing="4">INTERNATIONAL SCHOOL</text>
 </svg>
