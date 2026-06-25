@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0 p-0.5 overflow-hidden shadow-[0_2px_4px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform">
-              <img src="/favicon.svg" className="w-full h-full object-contain" alt="YOSU Logo" />
+              <img src="/logo-crest.svg?v=3" className="w-full h-full object-contain" alt="YOSU Logo" />
             </div>
             <div className="leading-tight">
               <p className="font-serif font-bold text-sm sm:text-base text-white tracking-wide">YOSU INTERNATIONAL</p>

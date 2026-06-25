@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center p-0.5 overflow-hidden shadow-inner">
-                <img src="/favicon.svg" className="w-full h-full object-contain" alt="YOSU Logo" />
+                <img src="/logo-crest.svg?v=3" className="w-full h-full object-contain" alt="YOSU Logo" />
               </div>
               <div>
                 <p className="font-serif font-bold text-white">YOSU INTERNATIONAL</p>
